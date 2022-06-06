@@ -1,25 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Box } from '@mui/material';
+import Hero from './components/Hero';
+import Navbar from './components/Navbar';
+import Vision from './components/Vision';
+import Explain from './components/Explain';
+import Stepper from './components/Stepper';
+import Timeline from './components/Timeline';
+import Team from './components/Team';
+import Footer from './components/Footer';
+
+const wrapper = {
+  m: '0 auto',
+  width: '70vw',
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box sx={wrapper}>
+      <Navbar />
+      <Hero />
+      <Vision />
+      <Explain />
+      <Stepper />
+      <Timeline />
+      <Team />
+      <Footer />
+    </Box>
   );
 }
 
